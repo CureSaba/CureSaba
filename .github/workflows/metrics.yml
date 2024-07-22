@@ -16,9 +16,17 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          filename: metrics.classic.svg
           token: ${{ secrets.METRICS_TOKEN }}
           template: terminal
           base: header, activity, community, repositories, metadata
+          plugin_traffic: yes
+          plugin_gists: yes
+          plugin_lines: yes
+          plugin_lines_history_limit: 3
+          plugin_lines_delay: 30
+          plugin_lines_repositories_limit: 10
+          plugin_lines_sections: base, repositories
       - name: Full-year calendar
         uses: lowlighter/metrics@latest
         with:
@@ -27,3 +35,9 @@ jobs:
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+      - name: Most used
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          plugin_languages: yes
