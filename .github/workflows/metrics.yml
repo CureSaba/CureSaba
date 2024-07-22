@@ -56,3 +56,10 @@ jobs:
           base: ""
           plugin_stars: yes
           plugin_stars_limit: 3
+      - name: Steam
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.steam.svg
+          plugin_steam: yes
+          plugin_steam_token: ${{ secrets.STEAM_TOKEN }}
+          
