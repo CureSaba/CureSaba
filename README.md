@@ -26,13 +26,13 @@ Here are some ideas to get you started:
 	 <tr>
 	   <td rowspan="2"><img src="./metrics.plugin.stars.svg" alt="stars" /></td> 
    </tr>
+	 <!--
 	 <tr>
 		 <td><img src="./metrics.plugin.steam.svg" alt="steam" /></td>
 	 </tr>
 	 <tr>
 		 <td><img src="./metrics.plugin.16personalities.svg" alt="16personalities" /></td>
 	 </tr>
-	 <!--
    <tr>
 	   <td><img src="./metrics.plugin.languages.svg" alt="languages" /></td> 
    </tr>
