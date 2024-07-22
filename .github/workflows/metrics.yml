@@ -18,7 +18,7 @@ jobs:
         with:
           filename: metrics.classic.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          template: terminal
+          template: classic
           base: header, activity, community, repositories, metadata
           plugin_traffic: yes
           plugin_gists: yes
